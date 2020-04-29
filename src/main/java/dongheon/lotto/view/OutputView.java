@@ -1,4 +1,4 @@
-package java.lotto.view;
+package dongheon.lotto.view;
 
 public class OutputView {
 }
