@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class ValidatorTest {
+
     @Test
     void 구입금액_숫자입력_확인() {
         //given
@@ -35,5 +36,26 @@ class ValidatorTest {
         // then
         assertThat(testResult).isFalse();
     }
+
+    @Test
+    void 수동로또_숫자입력_확인() {
+        // given
+        String testNumOfManualLotto = "세개";
+        // when
+        boolean testResult = Validator.checkNumOfManualLotto(testNumOfManualLotto);
+        // then
+        assertThat(testResult).isFalse();
+    }
+
+    @Test
+    void 수동로또_범위_확인() {
+        // given
+        String testNumOfManualLotto = "-1";
+        // when
+        boolean testResult = Validator.checkNumOfManualLotto(testNumOfManualLotto);
+        // then
+        assertThat(testResult).isFalse();
+    }
+
 
 }
