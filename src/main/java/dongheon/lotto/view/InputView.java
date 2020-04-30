@@ -1,6 +1,6 @@
 package dongheon.lotto.view;
 
-import dongheon.lotto.domain.LottoGame;
+import dongheon.lotto.domain.Lotto;
 import dongheon.lotto.utils.Validator;
 
 import java.util.Arrays;
@@ -14,7 +14,7 @@ import static dongheon.lotto.view.OutputView.printMessage;
 public class InputView {
     private static Scanner scanner = new Scanner(System.in);
 
-    public static int setNumOfTotalLotto() {
+    public static int getNumOfTotalLotto() {
         String totalPrice;
         do {
             printMessage("구입 금액을 입력해 주세요.");
@@ -23,7 +23,7 @@ public class InputView {
         return Integer.parseInt(totalPrice) / LOTTO_PRICE;
     }
 
-    public static int setNumOfManualLotto(int numOfTotalLotto) {
+    public static int getNumOfManualLotto(int numOfTotalLotto) {
         String numOfManualLotto;
         do {
             printMessage("수동으로 구매할 로또 수를 입력해 주세요. ");
@@ -32,7 +32,7 @@ public class InputView {
         return Integer.parseInt(numOfManualLotto);
     }
 
-    public static List<Integer> setManualLottoNums() {
+    public static List<Integer> getManualLottoNums() {
         List<Integer> manualLottoNums;
         do {
             manualLottoNums = Arrays.stream(scanner.nextLine().split(","))
@@ -40,8 +40,21 @@ public class InputView {
                     .map(Integer::parseInt)
                     .distinct()
                     .collect(Collectors.toList());
-        } while (Validator.validateLotto(manualLottoNums));
+        } while (!Validator.validateLotto(manualLottoNums));
         return manualLottoNums;
     }
 
+    public static Lotto getLastWeekLotto() {
+        printMessage("지난 주 당첨 번호를 입력해 주세요. ");
+        return new Lotto(getManualLottoNums());
+    }
+
+    public static int getLastWeekBonus(List<Integer> lastWeekAnswers) {
+        int bonus;
+        do {
+            printMessage("보너스 볼을 입력해 주세요. ");
+            bonus = scanner.nextInt();
+        } while (!Validator.validateBonus(lastWeekAnswers, bonus));
+        return bonus;
+    }
 }

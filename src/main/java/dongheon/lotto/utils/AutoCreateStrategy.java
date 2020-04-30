@@ -2,6 +2,7 @@ package dongheon.lotto.utils;
 
 import dongheon.lotto.domain.Lotto;
 import dongheon.lotto.domain.LottoGame;
+import dongheon.lotto.domain.LottoRepository;
 import dongheon.lotto.interfaces.LottoCreateStrategy;
 
 public class AutoCreateStrategy implements LottoCreateStrategy {
@@ -11,7 +12,8 @@ public class AutoCreateStrategy implements LottoCreateStrategy {
         for (int i = 0; i < numOfAutoLotto; i++) {
             RandomLottoCreator randomLottoCreator = new RandomLottoCreator();
             Lotto lotto = randomLottoCreator.createRandomLotto();
-            lottoGame.addLotto(lotto);
+            LottoRepository lottoInventory = lottoGame.getLottoRepository();
+            lottoInventory.addLotto(lotto);
         }
     }
 }

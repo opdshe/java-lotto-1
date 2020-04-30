@@ -48,7 +48,7 @@ public class Validator {
         try {
             checkRangeOfValue(numOfManualLotto);
             checkTypeOfValueIsNum(numOfManualLotto);
-            checkNumOfLottos(numOfTotalLotto, numOfManualLotto);
+            checkNumOfLotto(numOfTotalLotto, numOfManualLotto);
         } catch (IllegalArgumentException | InputMismatchException e) {
             System.out.println(e.getMessage());
             return false;
@@ -56,7 +56,7 @@ public class Validator {
         return true;
     }
 
-    private static void checkNumOfLottos(int numOfTotalLotto, String numOfManualLotto) {
+    private static void checkNumOfLotto(int numOfTotalLotto, String numOfManualLotto) {
         if (Integer.parseInt(numOfManualLotto) > numOfTotalLotto) {
             throw new IllegalArgumentException("수동 로또 개수가 전체 로또 개수보다 많습니다.");
         }
@@ -81,9 +81,34 @@ public class Validator {
 
     private static void checkLottoRange(List<Integer> lottoNums) throws IllegalArgumentException {
         lottoNums.forEach(num -> {
-            if (num > LOTTO_MAX_VALUE || num < LOTTO_MIN_VALUE) {
+            if (num < LOTTO_MIN_VALUE || num > LOTTO_MAX_VALUE) {
                 throw new IllegalArgumentException("로또 번호는 1 ~ 45 사이로 입력해 주세요. ");
             }
         });
     }
+
+    public static boolean validateBonus(List<Integer> lastWeekAnswers, int bonus) {
+        try {
+            checkBonusRange(bonus);
+            checkLastAnswerContainBonus(lastWeekAnswers, bonus);
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+            return false;
+        }
+        return true;
+    }
+
+    private static void checkBonusRange(int bonus) throws IllegalArgumentException {
+        if (bonus < LOTTO_MIN_VALUE | bonus > LOTTO_MAX_VALUE) {
+            throw new IllegalArgumentException("로또 번호는 1 ~ 45 사이로 입력해 주세요. ");
+        }
+    }
+
+    private static void checkLastAnswerContainBonus(List<Integer> lastWeekAnswers, int bonus) throws IllegalArgumentException {
+        if (lastWeekAnswers.contains(bonus)) {
+            throw new IllegalArgumentException("지난 주 당첨 번호에 보너스가 포함되어 있습니다. ");
+        }
+    }
+
+
 }

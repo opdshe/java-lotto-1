@@ -16,7 +16,7 @@ class AutoCreateStrategyTest {
         // when
         lottoGame.init();
         // then
-        assertThat(lottoGame.getLottos().size()).isEqualTo(3);
+        assertThat(lottoGame.getLottoRepository().getInventory().size()).isEqualTo(3);
 
     }
 

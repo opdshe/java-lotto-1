@@ -2,15 +2,16 @@ package dongheon.lotto.domain;
 
 public class WinningLotto {
     private final Lotto lotto;
-    private final int bonusNo;
+    private final int bonus;
 
-    public WinningLotto(Lotto lotto, int bonusNo) {
+    public WinningLotto(Lotto lotto, int bonus) {
         this.lotto = lotto;
-        this.bonusNo = bonusNo;
+        this.bonus = bonus;
     }
 
     public Rank match(Lotto userLotto) {
-        // TODO 로직 구현
-        return null;
+        int countOfMatch = lotto.countOfMatch(userLotto);
+        boolean matchBonus = lotto.containNumber(bonus);
+        return Rank.valueOf(countOfMatch, matchBonus);
     }
 }
