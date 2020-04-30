@@ -8,5 +8,7 @@ public class Application {
         int numOfTotalLotto = InputView.setNumOfTotalLotto();
         int numOfManualLotto= InputView.setNumOfManualLotto(numOfTotalLotto);
         LottoGame lottoGame = new LottoGame(numOfTotalLotto, numOfManualLotto);
+        lottoGame.init();
+
     }
 }

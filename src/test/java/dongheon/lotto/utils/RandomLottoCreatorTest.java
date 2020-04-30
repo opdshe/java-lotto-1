@@ -11,9 +11,10 @@ class RandomLottoCreatorTest {
         // given
         Lotto a;
         Lotto b;
+        RandomLottoCreator randomLottoCreator = new RandomLottoCreator();
         // when
-        a = RandomLottoCreator.createRandomLotto();
-        b = RandomLottoCreator.createRandomLotto();
+        a = randomLottoCreator.createRandomLotto();
+        b = randomLottoCreator.createRandomLotto();
         // then
         assertThat(a.equals(b)).isFalse();
     }

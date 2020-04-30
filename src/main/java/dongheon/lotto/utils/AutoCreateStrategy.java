@@ -9,7 +9,8 @@ public class AutoCreateStrategy implements LottoCreateStrategy {
     public void create(LottoGame lottoGame) {
         int numOfAutoLotto = lottoGame.getNumOfAutoLotto();
         for (int i = 0; i < numOfAutoLotto; i++) {
-            Lotto lotto = RandomLottoCreator.createRandomLotto();
+            RandomLottoCreator randomLottoCreator = new RandomLottoCreator();
+            Lotto lotto = randomLottoCreator.createRandomLotto();
             lottoGame.addLotto(lotto);
         }
     }

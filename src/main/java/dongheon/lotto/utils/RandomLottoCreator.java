@@ -2,7 +2,6 @@ package dongheon.lotto.utils;
 
 import dongheon.lotto.domain.Lotto;
 
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -12,13 +11,13 @@ import static dongheon.lotto.domain.Lotto.*;
 import static dongheon.lotto.domain.LottoGame.ZERO;
 
 public class RandomLottoCreator {
-    static List<Integer> randomBox = IntStream
+    private final List<Integer> randomBox = IntStream
             .rangeClosed(LOTTO_MIN_VALUE, LOTTO_MAX_VALUE)
             .boxed().collect(Collectors.toList());
 
-    public static Lotto createRandomLotto() {
+    public Lotto createRandomLotto() {
         Collections.shuffle(randomBox);
-        List <Integer> lottoNum = randomBox.subList(ZERO, LOTTO_LENGTH);
+        List<Integer> lottoNum = randomBox.subList(ZERO, LOTTO_LENGTH);
         return new Lotto(lottoNum);
     }
 }

@@ -1,5 +1,6 @@
 package dongheon.lotto.view;
 
+import dongheon.lotto.domain.LottoGame;
 import dongheon.lotto.utils.Validator;
 
 import java.util.Arrays;
@@ -8,6 +9,7 @@ import java.util.Scanner;
 import java.util.stream.Collectors;
 
 import static dongheon.lotto.domain.Lotto.LOTTO_PRICE;
+import static dongheon.lotto.view.OutputView.printMessage;
 
 public class InputView {
     private static Scanner scanner = new Scanner(System.in);
@@ -42,7 +44,4 @@ public class InputView {
         return manualLottoNums;
     }
 
-    public static void printMessage(String message) {
-        System.out.println(message);
-    }
 }

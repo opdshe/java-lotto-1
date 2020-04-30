@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8c8c60d-ba9e-4113-96ae-bfb74ac22ace" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/dongheon/lotto/domain/LottoGameTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dongheon/lotto/utils/AutoCreateStrategyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dongheon/lotto/domain/LottoGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dongheon/lotto/domain/LottoGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dongheon/lotto/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dongheon/lotto/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dongheon/lotto/domain/Lotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dongheon/lotto/domain/Lotto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dongheon/lotto/utils/AutoCreateStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dongheon/lotto/utils/AutoCreateStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dongheon/lotto/utils/ManualCreateStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dongheon/lotto/utils/ManualCreateStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dongheon/lotto/utils/RandomLottoCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dongheon/lotto/utils/RandomLottoCreator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dongheon/lotto/view/InputView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dongheon/lotto/view/InputView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dongheon/lotto/view/OutputView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dongheon/lotto/view/OutputView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dongheon/lotto/utils/AutoCreateStrategyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dongheon/lotto/utils/AutoCreateStrategyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dongheon/lotto/utils/RandomLottoCreatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dongheon/lotto/utils/RandomLottoCreatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +212,7 @@
       <updated>1587999976253</updated>
       <workItem from="1587999982438" duration="1832000" />
       <workItem from="1588123778547" duration="7129000" />
-      <workItem from="1588139286671" duration="22597000" />
+      <workItem from="1588139286671" duration="24223000" />
     </task>
     <servers />
   </component>
@@ -225,30 +227,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Auto_Import/0.0.1536.824@0.0.1536.824" timestamp="1588221500530" />
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1588221560173">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1588229424729">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1588221560173" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1588229424729" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1588227721301">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1588227721301" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1588228103016">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1588229841765">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588228103016" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1588228103016">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588229841765" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1588229841764">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1588228103016" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1588228103016">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1588229841764" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1588229841764">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1588228103016" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1588228103016">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1588229841764" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1588229841764">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1588228103016" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1588229841764" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1588140171495">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

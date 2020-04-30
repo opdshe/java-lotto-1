@@ -1,11 +1,10 @@
 package dongheon.lotto.utils;
 
-import dongheon.lotto.domain.Lotto;
 import dongheon.lotto.domain.LottoGame;
+import dongheon.lotto.view.OutputView;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 class AutoCreateStrategyTest {
     @Test
@@ -18,6 +17,7 @@ class AutoCreateStrategyTest {
         lottoGame.init();
         // then
         assertThat(lottoGame.getLottos().size()).isEqualTo(3);
+
     }
 
 }

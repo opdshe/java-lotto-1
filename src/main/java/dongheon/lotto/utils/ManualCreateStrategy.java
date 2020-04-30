@@ -5,7 +5,7 @@ import dongheon.lotto.domain.LottoGame;
 import dongheon.lotto.interfaces.LottoCreateStrategy;
 import dongheon.lotto.view.InputView;
 
-import static dongheon.lotto.view.InputView.printMessage;
+import static dongheon.lotto.view.OutputView.printMessage;
 
 
 public class ManualCreateStrategy implements LottoCreateStrategy {
