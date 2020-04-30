@@ -26,7 +26,7 @@ public class Application {
         List<Lotto> inventory = lottoGame.getLottoRepository().getInventory();
         lottoResult.calculate(lottoGame.getLottoRepository().getInventory(), winningLotto);
 
-
+        OutputView.printRankCount(lottoResult);
 
 
 
