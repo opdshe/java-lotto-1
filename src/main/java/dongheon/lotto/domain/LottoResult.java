@@ -1,25 +1,34 @@
 package dongheon.lotto.domain;
 
-import java.util.Collections;
 import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
 
 public class LottoResult {
-    private Map<Rank, Integer> result = new TreeMap<>();
+    private RankCount rankCount;
+    private int prize;
+
+    public LottoResult() {
+        rankCount = new RankCount();
+        prize = 0;
+    }
 
     public void calculate(List<Lotto> inventory, WinningLotto winningLotto) {
-        for (Rank rank : Rank.values()) {
-            result.put(rank, 0);
-        }
-        for (Lotto lotto : inventory) {
-            Rank rank = winningLotto.match(lotto);
-            result.put(rank, result.get(rank) + 1);
-        }
+        rankCount.countRank(inventory, winningLotto);
+        calculatePrize(inventory, winningLotto);
     }
 
-    public Map<Rank, Integer> getResult() {
-        return Collections.unmodifiableMap(result);
+    private void calculatePrize(List<Lotto> inventory, WinningLotto winningLotto) {
+        rankCount.getResult().entrySet().stream()
+                .filter(entry -> entry.getKey() != Rank.MISS)
+                .forEach(entry -> {
+                    prize += entry.getKey().getWinningMoney() * entry.getValue();
+                });
     }
 
+    public RankCount getRankCount() {
+        return rankCount;
+    }
+
+    public int getPrize() {
+        return prize;
+    }
 }

@@ -1,9 +1,6 @@
 package dongheon.lotto.view;
 
-import dongheon.lotto.domain.LottoGame;
-import dongheon.lotto.domain.LottoRepository;
-import dongheon.lotto.domain.LottoResult;
-import dongheon.lotto.domain.Rank;
+import dongheon.lotto.domain.*;
 
 import java.util.Map;
 
@@ -17,9 +14,14 @@ public class OutputView {
                 .forEach(lotto -> System.out.println(lotto.getNumbers()));
     }
 
-    public static void printRankCount(LottoResult lottoResult){
+    public static void printResult(LottoResult lottoResult, int totalPrice) {
+        printRankCount(lottoResult);
+        printPrize(lottoResult, totalPrice);
+
+    }
+    private static void printRankCount(LottoResult lottoResult){
         printMessage("---- 당첨 통계 ----");
-        lottoResult.getResult().entrySet()
+        lottoResult.getRankCount().getResult().entrySet()
                 .stream()
                 .filter(entry -> entry.getKey() != Rank.MISS)
                 .forEach(OutputView::printOneRank);
@@ -34,6 +36,10 @@ public class OutputView {
         printMessage(resultForOneRank + "(" + oneRank.getKey().getWinningMoney() + ")" + " - " + oneRank.getValue() + "개");
     }
 
+    private static void printPrize(LottoResult lottoResult, int totalPrice) {
+        float rateOfReturn = (float) lottoResult.getPrize() / (float) totalPrice;
+        printMessage("총 수익률은 " + rateOfReturn + "입니다. ");
+    }
     public static void printMessage(String message) {
         System.out.println(message);
     }

@@ -9,6 +9,8 @@ import dongheon.lotto.view.OutputView;
 
 import java.util.List;
 
+import static dongheon.lotto.domain.Lotto.LOTTO_PRICE;
+
 
 public class Application {
     public static void main(String[] args) {
@@ -22,11 +24,13 @@ public class Application {
         int bonus = InputView.getLastWeekBonus(lastWeekLotto.getNumbers());
         WinningLotto winningLotto = new WinningLotto(lastWeekLotto, bonus);
 
+
         LottoResult lottoResult = new LottoResult();
         List<Lotto> inventory = lottoGame.getLottoRepository().getInventory();
-        lottoResult.calculate(lottoGame.getLottoRepository().getInventory(), winningLotto);
+        lottoResult.calculate(inventory, winningLotto);
 
-        OutputView.printRankCount(lottoResult);
+        OutputView.printResult(lottoResult, numOfTotalLotto * LOTTO_PRICE);
+
 
 
 

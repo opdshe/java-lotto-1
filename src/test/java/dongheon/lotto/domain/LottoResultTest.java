@@ -9,11 +9,11 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
 
-class LottoResultTest {
+class RankCountTest {
     @Test
     void 랭크_개수_카운트_확인() {
         // given
-        LottoResult lottoResult =new LottoResult();
+        RankCount rankCount =new RankCount();
         List<Lotto> inventory = new ArrayList<>();
         inventory.add(new Lotto(Arrays.asList(1,2,3,4,5,6)));
 
@@ -22,10 +22,10 @@ class LottoResultTest {
         WinningLotto winningLotto = new WinningLotto(lastWeekAnswer,bonus);
 
         // when
-        lottoResult.calculate(inventory, winningLotto);
+        rankCount.countRank(inventory, winningLotto);
 
         //then
-        assertThat(lottoResult.getResult().get(Rank.SECOND)).isEqualTo(1);
+        assertThat(rankCount.getResult().get(Rank.SECOND)).isEqualTo(1);
     }
 
 }
