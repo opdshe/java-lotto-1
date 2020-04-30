@@ -5,7 +5,6 @@ import dongheon.lotto.utils.AutoCreateStrategy;
 import dongheon.lotto.utils.ManualCreateStrategy;
 
 public class LottoGame {
-    public static final int ZERO = 0;
 
     private LottoRepository lottoRepository;
     private final int numOfTotalLotto;

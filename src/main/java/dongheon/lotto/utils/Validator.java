@@ -4,7 +4,6 @@ import java.util.InputMismatchException;
 import java.util.List;
 
 import static dongheon.lotto.domain.Lotto.*;
-import static dongheon.lotto.domain.LottoGame.ZERO;
 
 public class Validator {
 

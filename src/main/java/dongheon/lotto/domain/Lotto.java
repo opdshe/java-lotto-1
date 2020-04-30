@@ -9,7 +9,8 @@ public class Lotto {
     public static final int LOTTO_LENGTH = 6;
     public static final int LOTTO_MAX_VALUE= 45;
     public static final int LOTTO_MIN_VALUE= 1;
-    private static final int COUNT_MATCH_DEFAULT = 3;
+    private static final int ONE = 1;
+    public static final int ZERO = 0;
 
     private final List<Integer> numbers;
 
@@ -18,7 +19,7 @@ public class Lotto {
     }
 
     public int countOfMatch(Lotto lotto){
-        int countMatch = COUNT_MATCH_DEFAULT;
+        int countMatch = ZERO;
         for (Integer number : numbers){
             countMatch += checkAnotherLottoContain(lotto, number);
         }
@@ -27,9 +28,9 @@ public class Lotto {
 
     private int checkAnotherLottoContain(Lotto lotto, int number){
         if (lotto.containNumber(number)){
-            return 1;
+            return ONE;
         }
-        return 0;
+        return ZERO;
     }
 
     public boolean containNumber(int number){

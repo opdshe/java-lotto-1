@@ -10,8 +10,8 @@ public class WinningLotto {
     }
 
     public Rank match(Lotto userLotto) {
-        int countOfMatch = lotto.countOfMatch(userLotto);
-        boolean matchBonus = lotto.containNumber(bonus);
+        int countOfMatch = userLotto.countOfMatch(lotto);
+        boolean matchBonus = userLotto.containNumber(bonus);
         return Rank.valueOf(countOfMatch, matchBonus);
     }
 }

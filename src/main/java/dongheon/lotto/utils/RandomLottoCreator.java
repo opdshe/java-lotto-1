@@ -8,7 +8,6 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 import static dongheon.lotto.domain.Lotto.*;
-import static dongheon.lotto.domain.LottoGame.ZERO;
 
 public class RandomLottoCreator {
     private final List<Integer> randomBox = IntStream
