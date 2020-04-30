@@ -2,6 +2,7 @@ package dongheon.lotto.utils;
 
 import dongheon.lotto.domain.Lotto;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -18,6 +19,7 @@ public class RandomLottoCreator {
     public static Lotto createRandomLotto() {
         Collections.shuffle(randomBox);
         List <Integer> lottoNum = randomBox.subList(ZERO, LOTTO_LENGTH);
+        System.out.println(Arrays.toString(lottoNum.toArray()));
         return new Lotto(lottoNum);
     }
 }
