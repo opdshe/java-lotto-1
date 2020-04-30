@@ -4,8 +4,6 @@ import dongheon.lotto.domain.Lotto;
 import dongheon.lotto.domain.LottoGame;
 import dongheon.lotto.interfaces.LottoCreateStrategy;
 
-import java.util.List;
-
 public class AutoCreateStrategy implements LottoCreateStrategy {
     @Override
     public void create(LottoGame lottoGame) {

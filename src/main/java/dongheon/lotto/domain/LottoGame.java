@@ -4,6 +4,8 @@ import dongheon.lotto.interfaces.LottoCreateStrategy;
 import dongheon.lotto.utils.AutoCreateStrategy;
 import dongheon.lotto.utils.ManualCreateStrategy;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class LottoGame {
@@ -18,15 +20,12 @@ public class LottoGame {
         this.numOfTotalLotto = numOfTotalOrders;
         this.numOfManualLotto = numOfManualOrders;
         this.numOfAutoLotto = numOfTotalLotto - numOfManualOrders;
+        lottos = new ArrayList<>();
     }
 
     public void init() {
-        for (int i = 0; i < numOfManualLotto; i++) {
-            createLotto(new ManualCreateStrategy());
-        }
-        for (int i = 0; i < numOfAutoLotto; i++) {
-            createLotto(new AutoCreateStrategy());
-        }
+        createLotto(new ManualCreateStrategy());
+        createLotto(new AutoCreateStrategy());
     }
 
     private void createLotto(LottoCreateStrategy strategy) {
@@ -34,7 +33,7 @@ public class LottoGame {
     }
 
     public void addLotto(Lotto lotto) {
-        this.lottos.add(lotto);
+        lottos.add(lotto);
     }
 
     public int getNumOfManualLotto() {
@@ -43,5 +42,9 @@ public class LottoGame {
 
     public int getNumOfAutoLotto() {
         return numOfAutoLotto;
+    }
+
+    public List<Lotto> getLottos() {
+        return Collections.unmodifiableList(lottos);
     }
 }

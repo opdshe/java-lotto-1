@@ -19,7 +19,6 @@ public class RandomLottoCreator {
     public static Lotto createRandomLotto() {
         Collections.shuffle(randomBox);
         List <Integer> lottoNum = randomBox.subList(ZERO, LOTTO_LENGTH);
-        System.out.println(Arrays.toString(lottoNum.toArray()));
         return new Lotto(lottoNum);
     }
 }

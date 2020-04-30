@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8c8c60d-ba9e-4113-96ae-bfb74ac22ace" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/dongheon/lotto/utils/RandomLottoCreatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dongheon/lotto/domain/LottoGameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dongheon/lotto/utils/AutoCreateStrategyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dongheon/lotto/domain/Lotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dongheon/lotto/domain/Lotto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dongheon/lotto/domain/LottoGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dongheon/lotto/domain/LottoGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dongheon/lotto/utils/AutoCreateStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dongheon/lotto/utils/AutoCreateStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dongheon/lotto/utils/ManualCreateStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dongheon/lotto/utils/ManualCreateStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dongheon/lotto/utils/RandomLottoCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dongheon/lotto/utils/RandomLottoCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dongheon/lotto/view/InputView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dongheon/lotto/view/InputView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +91,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../java-lotto" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../java-racingCar-1" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -98,46 +102,14 @@
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="dongheon.lotto.utils" />
+      <recent name="dongheon.lotto.domain" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RandomLottoCreatorTest">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dongheon.lotto.Application" />
-      <module name="java-lotto-1.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dongheon.lotto.interfaces.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ValidatorTest.구입금액_숫자입력_확인" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;dongheon.lotto.utils.ValidatorTest.구입금액_숫자입력_확인&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="RandomLottoCreatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AutoCreateStrategyTest.로또게임_자동생성전략_동작_확인">
+    <configuration name="AutoCreateStrategyTest.로또게임_자동생성전략_동작_확인" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-lotto-1.test" />
       <extension name="coverage">
         <pattern>
@@ -146,38 +118,71 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="dongheon.lotto.utils" />
-      <option name="MAIN_CLASS_NAME" value="dongheon.lotto.utils.RandomLottoCreatorTest" />
+      <option name="MAIN_CLASS_NAME" value="dongheon.lotto.utils.AutoCreateStrategyTest" />
+      <option name="METHOD_NAME" value="로또게임_자동생성전략_동작_확인" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LottoGameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-lotto-1.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dongheon.lotto.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dongheon.lotto.domain" />
+      <option name="MAIN_CLASS_NAME" value="dongheon.lotto.domain.LottoGameTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ValidatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LottoGameTest.로또게임_초기화_동작_확인" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-lotto-1.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dongheon.lotto.utils.*" />
+          <option name="PATTERN" value="dongheon.lotto.domain.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dongheon.lotto.utils" />
-      <option name="MAIN_CLASS_NAME" value="dongheon.lotto.utils.ValidatorTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="dongheon.lotto.domain" />
+      <option name="MAIN_CLASS_NAME" value="dongheon.lotto.domain.LottoGameTest" />
+      <option name="METHOD_NAME" value="로또게임_초기화_동작_확인" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ValidatorTest.구입금액_숫자입력_확인" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LottoGameTest.로또_추가_동작_확인" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-lotto-1.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dongheon.lotto.utils.*" />
+          <option name="PATTERN" value="dongheon.lotto.domain.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dongheon.lotto.utils" />
-      <option name="MAIN_CLASS_NAME" value="dongheon.lotto.utils.ValidatorTest" />
-      <option name="METHOD_NAME" value="구입금액_숫자입력_확인" />
+      <option name="PACKAGE_NAME" value="dongheon.lotto.domain" />
+      <option name="MAIN_CLASS_NAME" value="dongheon.lotto.domain.LottoGameTest" />
+      <option name="METHOD_NAME" value="로또_추가_동작_확인" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LottoGameTest.로또게임_자동생성전략_동작_확인" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-lotto-1.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dongheon.lotto.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dongheon.lotto.domain" />
+      <option name="MAIN_CLASS_NAME" value="dongheon.lotto.domain.LottoGameTest" />
+      <option name="METHOD_NAME" value="로또게임_자동생성전략_동작_확인" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -185,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RandomLottoCreatorTest" />
-        <item itemvalue="JUnit.ValidatorTest" />
-        <item itemvalue="Application.Application" />
-        <item itemvalue="JUnit.ValidatorTest.구입금액_숫자입력_확인" />
-        <item itemvalue="Gradle.ValidatorTest.구입금액_숫자입력_확인" />
+        <item itemvalue="JUnit.AutoCreateStrategyTest.로또게임_자동생성전략_동작_확인" />
+        <item itemvalue="JUnit.LottoGameTest.로또게임_자동생성전략_동작_확인" />
+        <item itemvalue="JUnit.LottoGameTest.로또_추가_동작_확인" />
+        <item itemvalue="JUnit.LottoGameTest.로또게임_초기화_동작_확인" />
+        <item itemvalue="JUnit.LottoGameTest" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +210,7 @@
       <updated>1587999976253</updated>
       <workItem from="1587999982438" duration="1832000" />
       <workItem from="1588123778547" duration="7129000" />
-      <workItem from="1588139286671" duration="19018000" />
+      <workItem from="1588139286671" duration="22597000" />
     </task>
     <servers />
   </component>
@@ -216,30 +221,34 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1588218687136">
+    <state x="361" y="71" key="#Auto_Import" timestamp="1588221500530">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1588218687136" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1588152131053">
+    <state x="361" y="71" key="#Auto_Import/0.0.1536.824@0.0.1536.824" timestamp="1588221500530" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1588221560173">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1588152131053" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1588221010987">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1588221560173" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1588227721301">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588221010987" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1588221010987">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1588227721301" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1588228103016">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1588221010987" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1588221010986">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588228103016" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1588228103016">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1588221010986" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1588221010987">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1588228103016" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1588228103016">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1588221010987" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1588228103016" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1588228103016">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1588228103016" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1588140171495">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -260,10 +269,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1588140137308" />
-    <state x="540" y="115" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1588219798350">
+    <state x="540" y="115" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1588227987179">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="540" y="115" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1588219798350" />
+    <state x="540" y="115" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1588227987179" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1588149164440">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

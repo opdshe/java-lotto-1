@@ -1,6 +1,5 @@
 package dongheon.lotto.view;
 
-import dongheon.lotto.domain.Lotto;
 import dongheon.lotto.utils.Validator;
 
 import java.util.Arrays;
