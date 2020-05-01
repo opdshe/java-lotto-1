@@ -1,7 +1,6 @@
 package dongheon.lotto.utils;
 
 import dongheon.lotto.domain.LottoGame;
-import dongheon.lotto.view.OutputView;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

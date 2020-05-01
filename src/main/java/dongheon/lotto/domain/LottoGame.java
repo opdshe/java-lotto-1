@@ -7,14 +7,12 @@ import dongheon.lotto.utils.ManualCreateStrategy;
 public class LottoGame {
 
     private LottoRepository lottoRepository;
-    private final int numOfTotalLotto;
     private final int numOfManualLotto;
     private final int numOfAutoLotto;
 
     public LottoGame(int numOfTotalOrders, int numOfManualOrders) {
-        this.numOfTotalLotto = numOfTotalOrders;
         this.numOfManualLotto = numOfManualOrders;
-        this.numOfAutoLotto = numOfTotalLotto - numOfManualOrders;
+        this.numOfAutoLotto = numOfTotalOrders - numOfManualOrders;
         lottoRepository= new LottoRepository();
     }
 

@@ -1,15 +1,7 @@
 package dongheon.lotto.domain;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
-import java.util.List;
-
-import static org.assertj.core.api.Assertions.assertThat;
-
 class LottoGameTest {
-
-
+    /*init을 테스트 하고 싶은데 수동 입력이 포함되어 있어서
+            어떻게 테스트해야할 지 모르겠네요 ..*/
 
 }

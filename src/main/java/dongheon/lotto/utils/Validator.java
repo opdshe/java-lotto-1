@@ -61,10 +61,10 @@ public class Validator {
         }
     }
 
-    public static boolean validateLotto(List<Integer> manualLottoNums) {
+    public static boolean validateLotto(List<Integer> lottoNums) {
         try {
-            checkLottoLength(manualLottoNums);
-            checkLottoRange(manualLottoNums);
+            checkLottoLength(lottoNums);
+            checkLottoRange(lottoNums);
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
             return false;
@@ -86,10 +86,10 @@ public class Validator {
         });
     }
 
-    public static boolean validateBonus(List<Integer> lastWeekAnswers, int bonus) {
+    public static boolean validateBonus(List<Integer> lastWeekAnswer, int bonus) {
         try {
             checkBonusRange(bonus);
-            checkLastAnswerContainBonus(lastWeekAnswers, bonus);
+            checkLastAnswerContainBonus(lastWeekAnswer, bonus);
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
             return false;
@@ -103,8 +103,8 @@ public class Validator {
         }
     }
 
-    private static void checkLastAnswerContainBonus(List<Integer> lastWeekAnswers, int bonus) throws IllegalArgumentException {
-        if (lastWeekAnswers.contains(bonus)) {
+    private static void checkLastAnswerContainBonus(List<Integer> lastWeekAnswer, int bonus) throws IllegalArgumentException {
+        if (lastWeekAnswer.contains(bonus)) {
             throw new IllegalArgumentException("지난 주 당첨 번호에 보너스가 포함되어 있습니다. ");
         }
     }
