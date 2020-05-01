@@ -18,7 +18,6 @@ public class Application {
         int numOfManualLotto= InputView.getNumOfManualLotto(numOfTotalLotto);
         LottoGame lottoGame = new LottoGame(numOfTotalLotto, numOfManualLotto);
         lottoGame.init();
-
         OutputView.printPurchaseStatus(lottoGame);
 
         WinningLotto winningLotto = WinningLotto.getWinningLotto();
@@ -26,7 +25,6 @@ public class Application {
         LottoResult lottoResult = new LottoResult();
         List<Lotto> inventory = lottoGame.getLottoRepository().getInventory();
         lottoResult.calculate(inventory, winningLotto);
-
         OutputView.printResult(lottoResult, numOfTotalLotto * LOTTO_PRICE);
 
 
