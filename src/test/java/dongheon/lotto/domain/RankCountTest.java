@@ -5,9 +5,10 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 import static org.assertj.core.api.Assertions.assertThat;
-
 
 class RankCountTest {
     @Test
@@ -25,7 +26,12 @@ class RankCountTest {
         rankCount.countRank(inventory, winningLotto);
 
         //then
-        assertThat(rankCount.getResult().get(Rank.SECOND)).isEqualTo(1);
+        List<Rank> countOfRankIsOne = rankCount.getResult().entrySet().stream()
+                .filter(entry->entry.getValue()==1)
+                .map(Map.Entry::getKey)
+                .collect(Collectors.toList());
+        assertThat(countOfRankIsOne).containsOnly(Rank.SECOND);
+
     }
 
 }
