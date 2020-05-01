@@ -20,10 +20,8 @@ public class Application {
         lottoGame.init();
 
         OutputView.printPurchaseStatus(lottoGame);
-        Lotto lastWeekLotto = InputView.getLastWeekLotto();
-        int bonus = InputView.getLastWeekBonus(lastWeekLotto.getNumbers());
-        WinningLotto winningLotto = new WinningLotto(lastWeekLotto, bonus);
 
+        WinningLotto winningLotto = WinningLotto.getWinningLotto();
 
         LottoResult lottoResult = new LottoResult();
         List<Lotto> inventory = lottoGame.getLottoRepository().getInventory();

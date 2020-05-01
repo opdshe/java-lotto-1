@@ -1,10 +1,12 @@
 package dongheon.lotto.domain;
 
+import dongheon.lotto.view.InputView;
+
 public class WinningLotto {
     private final Lotto lotto;
     private final int bonus;
 
-    public WinningLotto(Lotto lotto, int bonus) {
+    private WinningLotto(Lotto lotto, int bonus) {
         this.lotto = lotto;
         this.bonus = bonus;
     }
@@ -13,5 +15,11 @@ public class WinningLotto {
         int countOfMatch = userLotto.countOfMatch(lotto);
         boolean matchBonus = userLotto.containNumber(bonus);
         return Rank.valueOf(countOfMatch, matchBonus);
+    }
+
+    public static WinningLotto getWinningLotto() {
+        Lotto lastWeekLotto = InputView.getLastWeekLotto();
+        int bonus = InputView.getLastWeekBonus(lastWeekLotto.getNumbers());
+        return new WinningLotto(lastWeekLotto, bonus);
     }
 }
