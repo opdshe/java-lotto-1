@@ -3,13 +3,8 @@ package dongheon.lotto.domain;
 import java.util.List;
 
 public class LottoResult {
-    private RankCount rankCount;
+    private final RankCount rankCount = new RankCount();
     private int prize;
-
-    public LottoResult() {
-        rankCount = new RankCount();
-        prize = 0;
-    }
 
     public void calculate(List<Lotto> inventory, WinningLotto winningLotto) {
         rankCount.countRank(inventory, winningLotto);
