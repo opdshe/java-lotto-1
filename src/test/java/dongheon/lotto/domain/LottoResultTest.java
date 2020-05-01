@@ -8,24 +8,19 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-
-class RankCountTest {
+class LottoResultTest {
     @Test
-    void 랭크_개수_카운트_확인() {
+    void 로또_상금_확인() {
         // given
-        RankCount rankCount =new RankCount();
+        LottoResult lottoResult = new LottoResult();
         List<Lotto> inventory = new ArrayList<>();
-        inventory.add(new Lotto(Arrays.asList(1,2,3,4,5,6)));
-
-        Lotto lastWeekAnswer = new Lotto(Arrays.asList(1,2,3,4,5,45));
-        int bonus = 6;
-        WinningLotto winningLotto = new WinningLotto(lastWeekAnswer,bonus);
-
+        inventory.add(new Lotto(Arrays.asList(1, 2, 3, 4, 5, 6)));
+        Lotto lastWeekLotto = new Lotto(Arrays.asList(1, 2, 3, 4, 5, 45));
+        WinningLotto winningLotto = new WinningLotto(lastWeekLotto, 6);
         // when
-        rankCount.countRank(inventory, winningLotto);
-
-        //then
-        assertThat(rankCount.getResult().get(Rank.SECOND)).isEqualTo(1);
+        lottoResult.calculate(inventory, winningLotto);
+        // then
+        assertThat(lottoResult.getPrize()).isEqualTo(30_000_000);
     }
 
 }
