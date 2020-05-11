@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8c8c60d-ba9e-4113-96ae-bfb74ac22ace" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/lotto/controller/LottoGameTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lotto/utils/AutoCreateStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/utils/AutoCreateStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lotto/utils/RandomLottoCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/utils/RandomLottoCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lotto/view/OutputView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/view/OutputView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lotto/model/LottoRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/model/LottoRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lotto/model/LottoResultTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/model/LottoResultTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lotto/model/RankCountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/model/RankCountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lotto/model/LottoGameTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/lotto/utils/AutoCreateStrategyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/utils/AutoCreateStrategyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lotto/utils/RandomLottoCreatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/utils/RandomLottoCreatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +207,8 @@
       <workItem from="1587999982438" duration="1832000" />
       <workItem from="1588123778547" duration="7129000" />
       <workItem from="1588139286671" duration="46614000" />
-      <workItem from="1589171051016" duration="18264000" />
+      <workItem from="1589171051016" duration="18861000" />
+      <workItem from="1589213089263" duration="301000" />
     </task>
     <servers />
   </component>
@@ -283,10 +279,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1588140137308" />
-    <state x="540" y="115" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1588299822646">
+    <state x="459" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1589213187446">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="540" y="115" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1588299822646" />
+    <state x="459" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1589213187446" />
+    <state x="540" y="115" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1589213257702">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="540" y="115" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1589213257702" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1588237758030">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
