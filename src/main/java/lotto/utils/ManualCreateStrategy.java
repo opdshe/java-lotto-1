@@ -1,7 +1,6 @@
 package lotto.utils;
 
 import lotto.model.Lotto;
-import lotto.model.LottoRepository;
 import lotto.interfaces.LottoCreateStrategy;
 import lotto.view.InputView;
 

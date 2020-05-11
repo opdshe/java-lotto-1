@@ -7,10 +7,9 @@ import java.util.Map;
 
 
 public class OutputView {
-    public static void printPurchaseStatus(LottoGame lottoGame) {
-        System.out.println("수동으로 " + lottoGame.getNumOfManualLotto() + "개 "
-                + "자동으로 " + lottoGame.getNumOfAutoLotto() + "개를 구매했습니다. ");
-        LottoRepository lottoRepository = lottoGame.getLottoRepository();
+    public static void printPurchaseStatus(LottoRepository lottoRepository, int numOfManualLotto, int numOfAutoLotto) {
+        System.out.println("수동으로 " + numOfManualLotto + "개 "
+                + "자동으로 " + numOfAutoLotto + "개를 구매했습니다. ");
         lottoRepository.getInventory()
                 .forEach(lotto -> System.out.println(lotto.getNumbers()));
     }

@@ -1,5 +1,6 @@
 package lotto.model;
 
+import java.util.Collections;
 import java.util.List;
 
 public class LottoRepository {
@@ -7,5 +8,9 @@ public class LottoRepository {
 
     public LottoRepository(List<Lotto> lottos) {
         inventory = lottos;
+    }
+
+    public List<Lotto> getInventory() {
+        return Collections.unmodifiableList(inventory);
     }
 }
