@@ -2,8 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8c8c60d-ba9e-4113-96ae-bfb74ac22ace" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/dongheon/lotto/domain/LottoResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dongheon/lotto/domain/LottoResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dongheon/lotto/domain/WinningLotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dongheon/lotto/domain/WinningLotto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lotto/interfaces/LottoCreateStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dongheon/lotto/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/controller/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dongheon/lotto/domain/Lotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/model/Lotto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dongheon/lotto/domain/LottoGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/controller/LottoGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dongheon/lotto/domain/LottoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/model/LottoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dongheon/lotto/domain/LottoResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/model/LottoResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dongheon/lotto/domain/Rank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/model/Rank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dongheon/lotto/domain/RankCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/model/RankCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dongheon/lotto/domain/WinningLotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/model/WinningLotto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dongheon/lotto/interfaces/LottoCreateStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dongheon/lotto/utils/AutoCreateStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/utils/AutoCreateStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dongheon/lotto/utils/ManualCreateStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/utils/ManualCreateStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dongheon/lotto/utils/RandomLottoCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/utils/RandomLottoCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dongheon/lotto/utils/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/utils/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dongheon/lotto/view/InputView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/view/InputView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dongheon/lotto/view/OutputView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/view/OutputView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dongheon/lotto/domain/LottoGameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/model/LottoGameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dongheon/lotto/domain/LottoRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/model/LottoRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dongheon/lotto/domain/LottoResultTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/model/LottoResultTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dongheon/lotto/domain/LottoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/model/LottoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dongheon/lotto/domain/RankCountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/model/RankCountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dongheon/lotto/domain/RankTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/model/RankTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dongheon/lotto/domain/WinningLottoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/model/WinningLottoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dongheon/lotto/utils/AutoCreateStrategyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/utils/AutoCreateStrategyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dongheon/lotto/utils/RandomLottoCreatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/utils/RandomLottoCreatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dongheon/lotto/utils/ValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/utils/ValidatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,17 +123,20 @@
       <recent name="dongheon.lotto.domain" />
       <recent name="dongheon.lotto.utils" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dongheon.lotto.Application" />
+      <option name="MAIN_CLASS_NAME" value="lotto.controller.Application" />
       <module name="java-lotto-1.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dongheon.lotto.*" />
+          <option name="PATTERN" value="lotto.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,12 +148,12 @@
       <module name="java-lotto-1.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dongheon.lotto.domain.*" />
+          <option name="PATTERN" value="lotto.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dongheon.lotto.domain" />
-      <option name="MAIN_CLASS_NAME" value="dongheon.lotto.domain.RankCountTest" />
+      <option name="PACKAGE_NAME" value="lotto.model" />
+      <option name="MAIN_CLASS_NAME" value="lotto.model.RankCountTest" />
       <option name="METHOD_NAME" value="랭크_개수_카운트_확인" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -136,12 +164,12 @@
       <module name="java-lotto-1.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dongheon.lotto.domain.*" />
+          <option name="PATTERN" value="lotto.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dongheon.lotto.domain" />
-      <option name="MAIN_CLASS_NAME" value="dongheon.lotto.domain.RankTest" />
+      <option name="PACKAGE_NAME" value="lotto.model" />
+      <option name="MAIN_CLASS_NAME" value="lotto.model.RankTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -151,12 +179,12 @@
       <module name="java-lotto-1.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dongheon.lotto.utils.*" />
+          <option name="PATTERN" value="lotto.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dongheon.lotto.utils" />
-      <option name="MAIN_CLASS_NAME" value="dongheon.lotto.utils.ValidatorTest" />
+      <option name="PACKAGE_NAME" value="lotto.utils" />
+      <option name="MAIN_CLASS_NAME" value="lotto.utils.ValidatorTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -166,12 +194,12 @@
       <module name="java-lotto-1.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dongheon.lotto.domain.*" />
+          <option name="PATTERN" value="lotto.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dongheon.lotto.domain" />
-      <option name="MAIN_CLASS_NAME" value="dongheon.lotto.domain.WinningLottoTest" />
+      <option name="PACKAGE_NAME" value="lotto.model" />
+      <option name="MAIN_CLASS_NAME" value="lotto.model.WinningLottoTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -199,7 +227,8 @@
       <updated>1587999976253</updated>
       <workItem from="1587999982438" duration="1832000" />
       <workItem from="1588123778547" duration="7129000" />
-      <workItem from="1588139286671" duration="46017000" />
+      <workItem from="1588139286671" duration="46614000" />
+      <workItem from="1589171051016" duration="9620000" />
     </task>
     <servers />
   </component>
@@ -218,6 +247,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1588302487414" />
+    <state x="366" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1589187854896">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="366" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1589187854896" />
+    <state x="560" y="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1589187862634">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="560" y="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.824@0.0.1536.824" timestamp="1589187862634" />
     <state x="486" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588250631372">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -226,38 +263,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1588227721301" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1588303091269">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1588319411197">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588303091269" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1588303091269">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588319411197" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1588319411197">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1588303091269" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1588303091269">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1588319411197" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1588319411197">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1588303091269" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1588303091269">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1588319411197" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1588319411197">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1588303091269" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1588140171495">
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1588319411197" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1588319411132">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588140171495" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1588140171495">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588319411132" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1588319411132">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1588140171495" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1588140171495">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1588319411132" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1588319411132">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1588140171495" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1588140171495">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1588319411132" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1588319411132">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1588140171495" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1588319411132" />
     <state x="249" y="0" key="SettingsEditor" timestamp="1588140137308">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
