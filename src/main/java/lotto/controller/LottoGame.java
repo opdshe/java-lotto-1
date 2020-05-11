@@ -1,38 +1,31 @@
 package lotto.controller;
 
 import lotto.interfaces.LottoCreateStrategy;
+import lotto.model.Lotto;
 import lotto.model.LottoRepository;
 import lotto.utils.AutoCreateStrategy;
 import lotto.utils.ManualCreateStrategy;
+import lotto.view.InputView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class LottoGame {
-
-    private final int numOfManualLotto;
-    private final int numOfAutoLotto;
-
-    public LottoGame(int numOfTotalOrders, int numOfManualOrders) {
-        this.numOfManualLotto = numOfManualOrders;
-        this.numOfAutoLotto = numOfTotalOrders - numOfManualOrders;
+    public void play () {
+        int numOfTotalLotto = InputView.getNumOfTotalLotto();
+        int numOfManualLotto = InputView.getNumOfManualLotto(numOfTotalLotto);
+        LottoRepository lottoRepository = new LottoRepository(init(numOfTotalLotto, numOfManualLotto));
     }
 
-    public void init() {
-        createLotto(new ManualCreateStrategy());
-        createLotto(new AutoCreateStrategy());
+    private List<Lotto> init(int countOfTotalLotto, int countOfManualLotto) {
+        List<Lotto> lottos = new ArrayList<>();
+        lottos.addAll(createLotto(new ManualCreateStrategy(), countOfManualLotto));
+        lottos.addAll(createLotto(new AutoCreateStrategy(), countOfTotalLotto));
+        return lottos;
     }
 
-    private void createLotto(LottoCreateStrategy strategy) {
-        strategy.create(this);
+    private List<Lotto> createLotto(LottoCreateStrategy strategy, int countOfLotto) {
+        return strategy.create(countOfLotto);
     }
 
-    public int getNumOfManualLotto() {
-        return numOfManualLotto;
-    }
-
-    public int getNumOfAutoLotto() {
-        return numOfAutoLotto;
-    }
-
-    public LottoRepository getLottoRepository() {
-        return lottoRepository;
-    }
 }

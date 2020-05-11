@@ -1,19 +1,21 @@
 package lotto.utils;
 
 import lotto.model.Lotto;
-import lotto.controller.LottoGame;
 import lotto.model.LottoRepository;
 import lotto.interfaces.LottoCreateStrategy;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class AutoCreateStrategy implements LottoCreateStrategy {
     @Override
-    public void create(LottoGame lottoGame) {
-        int numOfAutoLotto = lottoGame.getNumOfAutoLotto();
-        for (int i = 0; i < numOfAutoLotto; i++) {
+    public List<Lotto> create(int countOfAutoLotto) {
+        List<Lotto> autoLotto = new ArrayList<>();
+        for (int i = 0; i < countOfAutoLotto; i++) {
             RandomLottoCreator randomLottoCreator = new RandomLottoCreator();
             Lotto lotto = randomLottoCreator.createRandomLotto();
-            LottoRepository lottoInventory = lottoGame.getLottoRepository();
-            lottoInventory.addLotto(lotto);
+            autoLotto.add(lotto);
         }
+        return autoLotto;
     }
 }

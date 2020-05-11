@@ -1,8 +1,8 @@
 package lotto.interfaces;
 
-import lotto.model.LottoRepository;
-
+import lotto.model.Lotto;
+import java.util.List;
 
 public interface LottoCreateStrategy {
-    void create(LottoRepository lottoRepository, int countOfLotto);
+    List<Lotto> create(int countOfLotto);
 }
