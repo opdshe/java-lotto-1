@@ -2,21 +2,21 @@ package lotto.model;
 
 import org.junit.jupiter.api.Test;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 class LottoRepositoryTest {
     @Test
-    void 로또_추가_동작_확인() {
+    void 로또_레퍼지토리_생성자_확인() {
         // given
-        LottoRepository lottoRepository = new LottoRepository();
+        List<Lotto> lottos = Arrays.asList(new Lotto(Arrays.asList(1,2,3,4,5,6)));
         // when
-        lottoRepository.addLotto(new Lotto(Arrays.asList(1,2,3,3,4,5,6)));
+        LottoRepository lottoRepository = new LottoRepository(lottos);
         // then
-        assertThat(lottoRepository.getInventory().size())
-                .isNotNull()
-                .isEqualTo(1);
+        assertThat(lottoRepository.getInventory().equals(lottos)).isTrue();
     }
 
 }

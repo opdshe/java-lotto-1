@@ -1,6 +1,5 @@
 package lotto.view;
 
-import lotto.controller.LottoGame;
 import lotto.model.*;
 
 import java.util.Map;

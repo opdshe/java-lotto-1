@@ -12,7 +12,7 @@ public class AutoCreateStrategy implements LottoCreateStrategy {
         List<Lotto> autoLotto = new ArrayList<>();
         for (int i = 0; i < countOfAutoLotto; i++) {
             RandomLottoCreator randomLottoCreator = new RandomLottoCreator();
-            Lotto lotto = randomLottoCreator.createRandomLotto();
+            Lotto lotto = new Lotto(randomLottoCreator.createRandomNumbers());
             autoLotto.add(lotto);
         }
         return autoLotto;
