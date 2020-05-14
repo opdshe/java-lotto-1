@@ -1,7 +1,6 @@
 package lotto.model;
 
 public class LottoResult {
-
     private final RankCount rankCount;
     private int prize;
 

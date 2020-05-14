@@ -6,7 +6,6 @@ import java.util.List;
 import static lotto.model.Lotto.*;
 
 public class Validator {
-
     public static boolean validateTotalPrice(String totalPrice) {
         try {
             checkRangeOfValue(totalPrice);

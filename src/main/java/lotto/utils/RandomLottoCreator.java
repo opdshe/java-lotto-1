@@ -9,7 +9,6 @@ import java.util.stream.IntStream;
 import static lotto.model.Lotto.*;
 
 public class RandomLottoCreator {
-
     private final List<Integer> randomBox = IntStream
             .rangeClosed(LOTTO_MIN_VALUE, LOTTO_MAX_VALUE)
             .boxed()

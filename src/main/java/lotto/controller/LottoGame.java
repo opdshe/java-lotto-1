@@ -19,19 +19,22 @@ public class LottoGame {
         int numOfTotalLotto = InputView.getNumOfTotalLotto();
         int numOfManualLotto = InputView.getNumOfManualLotto(numOfTotalLotto);
         int numOfAutoLotto = numOfTotalLotto - numOfManualLotto;
+
         LottoRepository lottoRepository = new LottoRepository(init(numOfManualLotto, numOfAutoLotto));
         OutputView.printPurchaseStatus(lottoRepository, numOfManualLotto, numOfAutoLotto);
         Lotto lastWeekLotto = InputView.getLastWeekLotto();
         int lastWeekBonus = InputView.getLastWeekBonus(lastWeekLotto.getNumbers());
         WinningLotto winningLotto = new WinningLotto(lastWeekLotto, lastWeekBonus);
+
         LottoResult lottoResult = new LottoResult(lottoRepository, winningLotto);
         OutputView.printResult(lottoResult, numOfTotalLotto * LOTTO_PRICE);
     }
 
     private static List<Lotto> init(int numOfManualLotto, int numOfAutoLotto) {
         List<Lotto> lottos = new ArrayList<>();
-        OutputView.printManualInputGuideMessage(numOfManualLotto);
         List<List<Integer>> lottoNums = new ArrayList<>();
+
+        OutputView.printManualInputGuideMessage(numOfManualLotto);
         lottoNums.addAll(InputView.getManualLottoNums(numOfManualLotto));
         lottoNums.addAll(RandomLottoCreator.getAutoLottoNums(numOfAutoLotto));
         createLotto(lottos, lottoNums);

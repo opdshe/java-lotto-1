@@ -7,7 +7,6 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class LottoRepositoryTest {
-
     @Test
     void 로또_레퍼지토리_생성자_확인() {
         // given

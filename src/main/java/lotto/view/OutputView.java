@@ -5,7 +5,6 @@ import lotto.model.*;
 import java.util.Map;
 
 public class OutputView {
-
     public static void printManualInputGuideMessage(int numOfManualLotto) {
         if (numOfManualLotto > 0) {
             printMessage("수동으로 구매할 번호를 입력해 주세요. ");

@@ -1,7 +1,6 @@
 package lotto.model;
 
 public class WinningLotto {
-
     private final Lotto lotto;
     private final int bonus;
 

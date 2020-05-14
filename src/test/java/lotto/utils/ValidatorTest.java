@@ -6,7 +6,6 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class ValidatorTest {
-
     @Test
     void 구입금액_숫자입력_확인() {
         //given

@@ -13,7 +13,6 @@ import static lotto.model.Lotto.LOTTO_PRICE;
 import static lotto.view.OutputView.printMessage;
 
 public class InputView {
-
     private static Scanner scanner = new Scanner(System.in);
 
     public static int getNumOfTotalLotto() {

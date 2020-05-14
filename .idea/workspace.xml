@@ -3,31 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b8c8c60d-ba9e-4113-96ae-bfb74ac22ace" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lotto/controller/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/controller/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lotto/controller/LottoGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/controller/LottoGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lotto/interfaces/LottoCreateStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lotto/model/Lotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/model/Lotto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lotto/model/LottoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/model/LottoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lotto/model/LottoResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/model/LottoResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lotto/model/Rank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/model/Rank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lotto/model/RankCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/model/RankCount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lotto/model/WinningLotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/model/WinningLotto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lotto/utils/AutoCreateStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lotto/utils/ManualCreateStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lotto/utils/RandomLottoCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/utils/RandomLottoCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lotto/utils/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/utils/Validator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lotto/view/InputView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/view/InputView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lotto/view/OutputView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/view/OutputView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lotto/controller/LottoGameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/controller/LottoGameTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lotto/model/LottoRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/model/LottoRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lotto/model/LottoResultTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/model/LottoResultTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lotto/model/LottoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/model/LottoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lotto/model/RankCountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/model/RankCountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lotto/model/RankTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/model/RankTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lotto/model/WinningLottoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/model/WinningLottoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lotto/utils/AutoCreateStrategyTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lotto/utils/RandomLottoCreatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/utils/RandomLottoCreatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lotto/utils/ValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/utils/ValidatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,7 +211,8 @@
       <workItem from="1588139286671" duration="46614000" />
       <workItem from="1589171051016" duration="18861000" />
       <workItem from="1589213089263" duration="460000" />
-      <workItem from="1589431327718" duration="12447000" />
+      <workItem from="1589431327718" duration="12790000" />
+      <workItem from="1589448889766" duration="252000" />
     </task>
     <servers />
   </component>
@@ -274,26 +251,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1589436281081" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1589273026118">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1589448271407">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589273026118" />
-    <state width="1493" height="150" key="GridCell.Tab.0.bottom" timestamp="1589447560818">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589448271407" />
+    <state width="1493" height="150" key="GridCell.Tab.0.bottom" timestamp="1589448272364">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="150" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589447560818" />
-    <state width="1493" height="150" key="GridCell.Tab.0.center" timestamp="1589447560818">
+    <state width="1493" height="150" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589448272364" />
+    <state width="1493" height="150" key="GridCell.Tab.0.center" timestamp="1589448272364">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="150" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589447560818" />
-    <state width="1493" height="150" key="GridCell.Tab.0.left" timestamp="1589447560818">
+    <state width="1493" height="150" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589448272364" />
+    <state width="1493" height="150" key="GridCell.Tab.0.left" timestamp="1589448272363">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="150" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589447560818" />
-    <state width="1493" height="150" key="GridCell.Tab.0.right" timestamp="1589447560818">
+    <state width="1493" height="150" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589448272363" />
+    <state width="1493" height="150" key="GridCell.Tab.0.right" timestamp="1589448272364">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="150" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589447560818" />
+    <state width="1493" height="150" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589448272364" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1588319411132">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

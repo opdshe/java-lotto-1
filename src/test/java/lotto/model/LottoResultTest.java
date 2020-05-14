@@ -9,7 +9,6 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class LottoResultTest {
-
     @Test
     void 로또_상금_확인() {
         // given
