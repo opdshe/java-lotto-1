@@ -3,7 +3,8 @@ package lotto.model;
 import java.util.*;
 
 public class RankCount {
-    private Map<Rank, Integer> result ;
+
+    private Map<Rank, Integer> result;
 
     public RankCount(LottoRepository lottoRepository, WinningLotto winningLotto) {
         result = new HashMap<>();

@@ -1,12 +1,11 @@
 package lotto.model;
 
 import org.junit.jupiter.api.Test;
-
 import java.util.Arrays;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
 class WinningLottoTest {
+
     @Test
     void 정답비교_후_반환되는_Rank_값_확인() {
         // given

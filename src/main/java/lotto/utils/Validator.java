@@ -1,8 +1,8 @@
 package lotto.utils;
 
+import lotto.view.OutputView;
 import java.util.InputMismatchException;
 import java.util.List;
-
 import static lotto.model.Lotto.*;
 
 public class Validator {
@@ -13,7 +13,7 @@ public class Validator {
             checkTypeOfValueIsNum(totalPrice);
             checkTotalPriceMod(totalPrice);
         } catch (InputMismatchException | IllegalArgumentException e) {
-            System.out.println(e.getMessage());
+            OutputView.printMessage(e.getMessage());
             return false;
         }
         return true;
@@ -49,7 +49,7 @@ public class Validator {
             checkTypeOfValueIsNum(numOfManualLotto);
             checkNumOfLotto(numOfTotalLotto, numOfManualLotto);
         } catch (IllegalArgumentException | InputMismatchException e) {
-            System.out.println(e.getMessage());
+            OutputView.printMessage(e.getMessage());
             return false;
         }
         return true;
@@ -66,7 +66,7 @@ public class Validator {
             checkLottoLength(lottoNums);
             checkLottoRange(lottoNums);
         } catch (IllegalArgumentException e) {
-            System.out.println(e.getMessage());
+            OutputView.printMessage(e.getMessage());
             return false;
         }
         return true;
@@ -91,7 +91,7 @@ public class Validator {
             checkBonusRange(bonus);
             checkLastAnswerContainBonus(lastWeekAnswer, bonus);
         } catch (IllegalArgumentException e) {
-            System.out.println(e.getMessage());
+            OutputView.printMessage(e.getMessage());
             return false;
         }
         return true;

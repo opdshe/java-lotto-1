@@ -3,6 +3,7 @@ package lotto.view;
 import lotto.model.Lotto;
 import lotto.utils.Validator;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
@@ -12,6 +13,7 @@ import static lotto.model.Lotto.LOTTO_PRICE;
 import static lotto.view.OutputView.printMessage;
 
 public class InputView {
+
     private static Scanner scanner = new Scanner(System.in);
 
     public static int getNumOfTotalLotto() {
@@ -32,7 +34,16 @@ public class InputView {
         return Integer.parseInt(numOfManualLotto);
     }
 
-    public static List<Integer> getManualLottoNums() {
+    public static List<List<Integer>> getManualLottoNums(int numOfManualLotto) {
+        List<List<Integer>> manualLottoNums = new ArrayList<>();
+        for (int i = 0; i < numOfManualLotto; i++) {
+            List<Integer> manualLottoNum = getOneManualLottoNums();
+            manualLottoNums.add(manualLottoNum);
+        }
+        return manualLottoNums;
+    }
+
+    private static List<Integer> getOneManualLottoNums() {
         List<Integer> manualLottoNums;
         do {
             manualLottoNums = Arrays.stream(scanner.nextLine().split(","))
@@ -46,7 +57,7 @@ public class InputView {
 
     public static Lotto getLastWeekLotto() {
         printMessage("지난 주 당첨 번호를 입력해 주세요. ");
-        return new Lotto(getManualLottoNums());
+        return new Lotto(getOneManualLottoNums());
     }
 
     public static int getLastWeekBonus(List<Integer> lastWeekAnswers) {

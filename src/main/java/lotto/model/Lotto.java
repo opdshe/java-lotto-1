@@ -5,10 +5,11 @@ import java.util.List;
 import java.util.Objects;
 
 public class Lotto {
+
     public static final int LOTTO_PRICE = 1000;
     public static final int LOTTO_LENGTH = 6;
-    public static final int LOTTO_MAX_VALUE= 45;
-    public static final int LOTTO_MIN_VALUE= 1;
+    public static final int LOTTO_MAX_VALUE = 45;
+    public static final int LOTTO_MIN_VALUE = 1;
     private static final int ONE = 1;
     public static final int ZERO = 0;
 
@@ -18,23 +19,27 @@ public class Lotto {
         this.numbers = numbers;
     }
 
-    public int countOfMatch(Lotto lotto){
+    public int countOfMatch(Lotto lotto) {
         int countMatch = ZERO;
-        for (Integer number : numbers){
+        for (Integer number : numbers) {
             countMatch += checkAnotherLottoContain(lotto, number);
         }
         return countMatch;
     }
 
-    private int checkAnotherLottoContain(Lotto lotto, int number){
-        if (lotto.containNumber(number)){
+    private int checkAnotherLottoContain(Lotto lotto, int number) {
+        if (lotto.containNumber(number)) {
             return ONE;
         }
         return ZERO;
     }
 
-    public boolean containNumber(int number){
+    public boolean containNumber(int number) {
         return numbers.contains(number);
+    }
+
+    public List<Integer> getNumbers() {
+        return Collections.unmodifiableList(numbers);
     }
 
     @Override
@@ -50,7 +55,4 @@ public class Lotto {
         return Objects.hash(numbers);
     }
 
-    public List<Integer> getNumbers() {
-        return Collections.unmodifiableList(numbers);
-    }
 }

@@ -1,14 +1,13 @@
 package lotto.model;
 
 import org.junit.jupiter.api.Test;
-
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 class LottoRepositoryTest {
+
     @Test
     void 로또_레퍼지토리_생성자_확인() {
         // given

@@ -1,12 +1,11 @@
 package lotto.model;
 
 import org.junit.jupiter.api.Test;
-
 import java.util.Arrays;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
 class LottoTest {
+
     @Test
     void 두_로또_일치하는_숫자_개수_확인() {
         // given 

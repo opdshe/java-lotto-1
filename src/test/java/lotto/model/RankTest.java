@@ -1,9 +1,9 @@
 package lotto.model;
 
 import org.junit.jupiter.api.Test;
-
 import static lotto.model.Rank.*;
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 
 class RankTest {
     private Rank rank;
@@ -56,6 +56,12 @@ class RankTest {
         assertThat(rank).isEqualTo(MISS);
     }
 
-
+    @Test
+    void 최대범위_밖의_인풋_확인() {
+        // then
+        assertThatExceptionOfType(IllegalArgumentException.class).isThrownBy(()->{
+            rank = Rank.valueOf(7, false);
+        });
+    }
 
 }

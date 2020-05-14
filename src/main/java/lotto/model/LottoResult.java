@@ -1,17 +1,16 @@
 package lotto.model;
 
-import java.util.List;
-
 public class LottoResult {
+
     private final RankCount rankCount;
     private int prize;
 
     public LottoResult(LottoRepository lottoRepository, WinningLotto winningLotto) {
         rankCount = new RankCount(lottoRepository, winningLotto);
-        calculatePrize(lottoRepository.getInventory(), winningLotto);
+        calculatePrize();
     }
 
-    private void calculatePrize(List<Lotto> inventory, WinningLotto winningLotto) {
+    private void calculatePrize() {
         rankCount.getResult().entrySet().stream()
                 .filter(entry -> entry.getKey() != Rank.MISS)
                 .forEach(entry -> {
