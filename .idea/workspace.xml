@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8c8c60d-ba9e-4113-96ae-bfb74ac22ace" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lotto/strategies/AutoGenerateStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lotto/strategies/GenerateLottoNumStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lotto/strategies/ManualGenerateStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lotto/controller/LottoGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/controller/LottoGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lotto/model/LottoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/model/LottoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lotto/utils/RandomLottoCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/utils/RandomLottoCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lotto/view/InputView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lotto/view/InputView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lotto/model/LottoRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/model/LottoRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lotto/model/LottoResultTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/model/LottoResultTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lotto/model/RankCountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/model/RankCountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lotto/utils/RandomLottoCreatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lotto/utils/RandomLottoCreatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,10 +68,10 @@
       <list>
         <option value="Enum" />
         <option value="Arquillian JUnit Test Class" />
-        <option value="Interface" />
         <option value="Python Script" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -106,34 +116,40 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RankTest.최대범위_밖의_인풋_확인">
-    <configuration name="AutoCreateStrategyTest.로또게임_자동생성전략_동작_확인" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java-lotto-1.test" />
+  <component name="RunManager" selected="JUnit.LottoRepositoryTest.로또_레퍼지토리_생성자_확인">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lotto.controller.Application" />
+      <module name="java-lotto-1.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lotto.utils.*" />
+          <option name="PATTERN" value="lotto.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lotto.utils" />
-      <option name="MAIN_CLASS_NAME" value="lotto.utils.AutoCreateStrategyTest" />
-      <option name="METHOD_NAME" value="로또게임_자동생성전략_동작_확인" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RandomLottoCreatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in java-lotto-1.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-lotto-1.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LottoRepositoryTest.로또_레퍼지토리_생성자_확인" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-lotto-1.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lotto.utils.*" />
+          <option name="PATTERN" value="lotto.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lotto.utils" />
-      <option name="MAIN_CLASS_NAME" value="lotto.utils.RandomLottoCreatorTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="lotto.model" />
+      <option name="MAIN_CLASS_NAME" value="lotto.model.LottoRepositoryTest" />
+      <option name="METHOD_NAME" value="로또_레퍼지토리_생성자_확인" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,22 +165,6 @@
       <option name="PACKAGE_NAME" value="lotto.utils" />
       <option name="MAIN_CLASS_NAME" value="lotto.utils.RandomLottoCreatorTest" />
       <option name="METHOD_NAME" value="매번_다른_번호_생성하는_지_확인" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RankCountTest.랭크_개수_카운트_확인" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java-lotto-1.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lotto.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lotto.model" />
-      <option name="MAIN_CLASS_NAME" value="lotto.model.RankCountTest" />
-      <option name="METHOD_NAME" value="랭크_개수_카운트_확인" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -188,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RankTest.최대범위_밖의_인풋_확인" />
-        <item itemvalue="JUnit.RandomLottoCreatorTest" />
-        <item itemvalue="JUnit.AutoCreateStrategyTest.로또게임_자동생성전략_동작_확인" />
+        <item itemvalue="JUnit.LottoRepositoryTest.로또_레퍼지토리_생성자_확인" />
         <item itemvalue="JUnit.RandomLottoCreatorTest.매번_다른_번호_생성하는_지_확인" />
-        <item itemvalue="JUnit.RankCountTest.랭크_개수_카운트_확인" />
+        <item itemvalue="JUnit.All in java-lotto-1.test" />
+        <item itemvalue="Application.Application" />
+        <item itemvalue="JUnit.RankTest.최대범위_밖의_인풋_확인" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +212,8 @@
       <workItem from="1589171051016" duration="18861000" />
       <workItem from="1589213089263" duration="460000" />
       <workItem from="1589431327718" duration="12790000" />
-      <workItem from="1589448889766" duration="252000" />
+      <workItem from="1589448889766" duration="1818000" />
+      <workItem from="1589603340748" duration="8197000" />
     </task>
     <servers />
   </component>
@@ -231,10 +232,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1589447827888" />
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1589199518571">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1589608680390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1589199518571" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1589608680390" />
     <state x="366" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1589187854896">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -255,22 +256,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589448271407" />
-    <state width="1493" height="150" key="GridCell.Tab.0.bottom" timestamp="1589448272364">
+    <state width="1493" height="150" key="GridCell.Tab.0.bottom" timestamp="1589611057634">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="150" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589448272364" />
-    <state width="1493" height="150" key="GridCell.Tab.0.center" timestamp="1589448272364">
+    <state width="1493" height="150" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589611057634" />
+    <state width="1493" height="150" key="GridCell.Tab.0.center" timestamp="1589611057634">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="150" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589448272364" />
-    <state width="1493" height="150" key="GridCell.Tab.0.left" timestamp="1589448272363">
+    <state width="1493" height="150" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589611057634" />
+    <state width="1493" height="150" key="GridCell.Tab.0.left" timestamp="1589611057634">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="150" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589448272363" />
-    <state width="1493" height="150" key="GridCell.Tab.0.right" timestamp="1589448272364">
+    <state width="1493" height="150" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589611057634" />
+    <state width="1493" height="150" key="GridCell.Tab.0.right" timestamp="1589611057634">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="150" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589448272364" />
+    <state width="1493" height="150" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589611057634" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1588319411132">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

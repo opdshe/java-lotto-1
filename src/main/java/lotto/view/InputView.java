@@ -33,16 +33,7 @@ public class InputView {
         return Integer.parseInt(numOfManualLotto);
     }
 
-    public static List<List<Integer>> getManualLottoNums(int numOfManualLotto) {
-        List<List<Integer>> manualLottoNums = new ArrayList<>();
-        for (int i = 0; i < numOfManualLotto; i++) {
-            List<Integer> manualLottoNum = getOneManualLottoNums();
-            manualLottoNums.add(manualLottoNum);
-        }
-        return manualLottoNums;
-    }
-
-    private static List<Integer> getOneManualLottoNums() {
+    public static List<Integer> getManualLottoNums() {
         List<Integer> manualLottoNums;
         do {
             manualLottoNums = Arrays.stream(scanner.nextLine().split(","))
@@ -56,7 +47,7 @@ public class InputView {
 
     public static Lotto getLastWeekLotto() {
         printMessage("지난 주 당첨 번호를 입력해 주세요. ");
-        return new Lotto(getOneManualLottoNums());
+        return new Lotto(getManualLottoNums());
     }
 
     public static int getLastWeekBonus(List<Integer> lastWeekAnswers) {

@@ -9,23 +9,17 @@ import java.util.stream.IntStream;
 import static lotto.model.Lotto.*;
 
 public class RandomLottoCreator {
-    private final List<Integer> randomBox = IntStream
-            .rangeClosed(LOTTO_MIN_VALUE, LOTTO_MAX_VALUE)
-            .boxed()
-            .collect(Collectors.toList());
 
-    private List<Integer> createRandomNumbers() {
+    private static List<Integer> createRandomNumbers() {
+        List<Integer> randomBox = IntStream
+                .rangeClosed(LOTTO_MIN_VALUE, LOTTO_MAX_VALUE)
+                .boxed()
+                .collect(Collectors.toList());
         Collections.shuffle(randomBox);
         return randomBox.subList(ZERO, LOTTO_LENGTH);
     }
 
-    public static List<List<Integer>> getAutoLottoNums(int numOfAutoLotto) {
-        List<List<Integer>> autoLottoNums = new ArrayList<>();
-        for (int i = 0; i < numOfAutoLotto; i++) {
-            RandomLottoCreator randomLottoCreator = new RandomLottoCreator();
-            List<Integer> autoLottoNum = randomLottoCreator.createRandomNumbers();
-            autoLottoNums.add(autoLottoNum);
-        }
-        return autoLottoNums;
+    public static List<Integer> getAutoLottoNums() {
+        return createRandomNumbers();
     }
 }

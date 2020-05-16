@@ -13,9 +13,11 @@ class RandomLottoCreatorTest {
     void 매번_다른_번호_생성하는_지_확인() {
         // given
         int numOfAutoLotto = 10;
-        List<List<Integer>> autoLottoNums = RandomLottoCreator.getAutoLottoNums(10);
+        Set<List<Integer>> lottoNums = new HashSet<>();
         // when
-        Set<List<Integer>> lottoNums = new HashSet<>(autoLottoNums);
+       for(int i = 0; i <numOfAutoLotto; i++) {
+           lottoNums.add(RandomLottoCreator.getAutoLottoNums());
+       }
         // then
         assertThat(lottoNums.size()).isEqualTo(numOfAutoLotto);
     }
