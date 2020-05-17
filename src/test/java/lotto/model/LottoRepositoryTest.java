@@ -1,19 +1,5 @@
 package lotto.model;
 
-import org.junit.jupiter.api.Test;
-
-import static org.assertj.core.api.Assertions.assertThat;
-
 class LottoRepositoryTest {
-    @Test
-    void 로또_레퍼지토리_생성자_확인() {
-        // given
-        int numOfManualLotto = 3;
-        int numOfAutoLotto = 3;
-        // when
-        LottoRepository lottoRepository = new LottoRepository(numOfManualLotto, numOfAutoLotto);
-        // then
-        assertThat(lottoRepository.getInventory().size()).isEqualTo(numOfAutoLotto+numOfManualLotto);
-    }
-
+    //다른 클래스에서 다 검증했던 로직들이라 딱히 할 게 없네요
 }

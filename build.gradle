@@ -26,6 +26,8 @@ dependencies {
     testCompile 'org.assertj:assertj-core:3.6.2'
     // Use JUnit test framework
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.6.0")
+    testCompile group: 'org.mockito', name: 'mockito-all', version: '1.8.4'
+
 
 }
 

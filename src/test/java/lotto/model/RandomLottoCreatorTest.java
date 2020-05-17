@@ -1,4 +1,4 @@
-package lotto.utils;
+package lotto.model;
 
 import org.junit.jupiter.api.Test;
 
@@ -15,9 +15,9 @@ class RandomLottoCreatorTest {
         int numOfAutoLotto = 10;
         Set<List<Integer>> lottoNums = new HashSet<>();
         // when
-       for(int i = 0; i <numOfAutoLotto; i++) {
-           lottoNums.add(RandomLottoCreator.getAutoLottoNums());
-       }
+        for (int i = 0; i < numOfAutoLotto; i++) {
+            lottoNums.add(RandomLottoNumCreator.getAutoLottoNums());
+        }
         // then
         assertThat(lottoNums.size()).isEqualTo(numOfAutoLotto);
     }

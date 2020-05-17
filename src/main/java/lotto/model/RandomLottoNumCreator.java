@@ -1,6 +1,5 @@
-package lotto.utils;
+package lotto.model;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -8,7 +7,7 @@ import java.util.stream.IntStream;
 
 import static lotto.model.Lotto.*;
 
-public class RandomLottoCreator {
+public class RandomLottoNumCreator {
 
     private static List<Integer> createRandomNumbers() {
         List<Integer> randomBox = IntStream
