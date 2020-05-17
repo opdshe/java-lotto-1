@@ -2,6 +2,7 @@ package lotto.view;
 
 import lotto.model.*;
 
+import java.util.List;
 import java.util.Map;
 
 public class OutputView {
@@ -11,11 +12,10 @@ public class OutputView {
         }
     }
 
-    public static void printPurchaseStatus(LottoRepository lottoRepository, int numOfManualLotto, int numOfAutoLotto) {
+    public static void printPurchaseStatus(List<Lotto> lottoRepository, int numOfManualLotto, int numOfAutoLotto) {
         printMessage("수동으로 " + numOfManualLotto + "개 "
                 + "자동으로 " + numOfAutoLotto + "개를 구매했습니다. ");
-        lottoRepository.getInventory()
-                .forEach(lotto -> System.out.println(lotto.getNumbers()));
+        lottoRepository.forEach(lotto -> System.out.println(lotto.getNumbers()));
     }
 
     public static void printResult(LottoResult lottoResult, int totalPrice) {

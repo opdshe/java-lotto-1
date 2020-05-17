@@ -47,7 +47,8 @@ public class InputView {
         List<Integer> lastWeekLottoNum;
         printMessage("지난 주 당첨 번호를 입력해 주세요. ");
         do {
-            lastWeekLottoNum = strategy.generate();
+            String lottoNum = getManualLottoNum();
+            lastWeekLottoNum = strategy.generate(lottoNum);
         } while (!validator.validate(lastWeekLottoNum));
         return lastWeekLottoNum;
     }

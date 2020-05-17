@@ -1,10 +1,12 @@
 package lotto.model;
 
+import java.util.List;
+
 public class LottoResult {
     private final RankCount rankCount;
     private int prize;
 
-    public LottoResult(LottoRepository lottoRepository, WinningLotto winningLotto) {
+    public LottoResult(List<Lotto> lottoRepository, WinningLotto winningLotto) {
         rankCount = new RankCount(lottoRepository, winningLotto);
         calculatePrize();
     }

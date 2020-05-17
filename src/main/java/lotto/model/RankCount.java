@@ -5,12 +5,12 @@ import java.util.*;
 public class RankCount {
     private Map<Rank, Integer> result;
 
-    public RankCount(LottoRepository lottoRepository, WinningLotto winningLotto) {
+    public RankCount(List<Lotto> lottoRepository, WinningLotto winningLotto) {
         result = new HashMap<>();
         for (Rank rank : Rank.values()) {
             result.put(rank, 0);
         }
-        for (Lotto lotto : lottoRepository.getInventory()) {
+        for (Lotto lotto : lottoRepository) {
             Rank rank = winningLotto.match(lotto);
             result.put(rank, result.get(rank) + 1);
         }
