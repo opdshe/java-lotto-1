@@ -1,12 +1,11 @@
 package lotto.view;
 
-import lotto.strategies.GenerateLottoNumStrategy;
-import lotto.strategies.ManualGenerateStrategy;
-import lotto.validators.Validator;
-import lotto.validators.validationstrategies.IsContainedInLastLotto;
-import lotto.validators.validationstrategies.ValidateCountOfManualLotto;
-import lotto.validators.validationstrategies.ValidateLotto;
-import lotto.validators.validationstrategies.ValidateLottoPrice;
+import lotto.exceptions.AlreadyInLastLottoException;
+import lotto.utils.Utils;
+import lotto.validators.BonusNumberValidator;
+import lotto.validators.CountOfManualLottoValidator;
+import lotto.validators.LottoNumberValidator;
+import lotto.validators.LottoPriceValidator;
 
 import java.util.List;
 import java.util.Scanner;
@@ -19,21 +18,26 @@ public class InputView {
 
     public static int getNumOfTotalLotto() throws Exception {
         String totalPrice;
-        Validator validator = new Validator(new ValidateLottoPrice());
-        do {
-            printMessage("구입 금액을 입력해 주세요.");
-            totalPrice = scanner.nextLine();
-        } while (!validator.validate(totalPrice));
+        printMessage("구입 금액을 입력해 주세요.");
+        totalPrice = scanner.nextLine();
+        try {
+            LottoPriceValidator.test(totalPrice);
+        } catch (IllegalArgumentException e) {
+            OutputView.printMessage(e.getMessage());
+            return getNumOfTotalLotto();
+        }
         return Integer.parseInt(totalPrice) / LOTTO_PRICE;
     }
 
     public static int getNumOfManualLotto(int numOfTotalLotto) throws Exception {
-        Validator validator = new Validator(new ValidateCountOfManualLotto());
-        String numOfManualLotto;
-        do {
-            printMessage("수동으로 구매할 로또 수를 입력해 주세요. ");
-            numOfManualLotto = scanner.nextLine();
-        } while (!validator.validate(numOfTotalLotto, numOfManualLotto));
+        printMessage("수동으로 구매할 로또 수를 입력해 주세요. ");
+        String numOfManualLotto = scanner.nextLine();
+        try {
+            CountOfManualLottoValidator.test(numOfTotalLotto, numOfManualLotto);
+        } catch (IllegalArgumentException e){
+            OutputView.printMessage(e.getMessage());
+            return getNumOfManualLotto(numOfTotalLotto);
+        }
         return Integer.parseInt(numOfManualLotto);
     }
 
@@ -42,24 +46,28 @@ public class InputView {
     }
 
     public static List<Integer> getLastWeekLottoNum() throws Exception {
-        Validator validator = new Validator(new ValidateLotto());
-        GenerateLottoNumStrategy strategy = new ManualGenerateStrategy();
-        List<Integer> lastWeekLottoNum;
         printMessage("지난 주 당첨 번호를 입력해 주세요. ");
-        do {
-            String lottoNum = getManualLottoNum();
-            lastWeekLottoNum = strategy.generate(lottoNum);
-        } while (!validator.validate(lastWeekLottoNum));
+        String lottoNum = getManualLottoNum();
+        List<Integer> lastWeekLottoNum = Utils.stringToList(lottoNum);
+        try {
+            LottoNumberValidator.test(lastWeekLottoNum);
+        } catch (IllegalArgumentException e) {
+            OutputView.printMessage(e.getMessage());
+            return getLastWeekLottoNum();
+        }
         return lastWeekLottoNum;
     }
 
     public static int getLastWeekBonus(List<Integer> lastWeekAnswers) {
         int bonus;
-        Validator validator = new Validator(new IsContainedInLastLotto());
         printMessage("보너스 볼을 입력해 주세요. ");
-        do {
+        try {
             bonus = scanner.nextInt();
-        } while (!validator.validate(lastWeekAnswers, bonus));
+            BonusNumberValidator.test(lastWeekAnswers, bonus);
+        } catch (IllegalArgumentException | AlreadyInLastLottoException e) {
+            OutputView.printMessage(e.getMessage());
+            return getLastWeekBonus(lastWeekAnswers);
+        }
         return bonus;
     }
 }

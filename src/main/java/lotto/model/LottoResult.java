@@ -8,15 +8,14 @@ public class LottoResult {
 
     public LottoResult(List<Lotto> lottoRepository, WinningLotto winningLotto) {
         rankCount = new RankCount(lottoRepository, winningLotto);
-        calculatePrize();
+        prize = calculatePrize();
     }
 
-    private void calculatePrize() {
-        rankCount.getResult().entrySet().stream()
+    private int calculatePrize() {
+        return rankCount.getResult().entrySet().stream()
                 .filter(entry -> entry.getKey() != Rank.MISS)
-                .forEach(entry -> {
-                    prize += entry.getKey().getWinningMoney() * entry.getValue();
-                });
+                .mapToInt(entry -> entry.getKey().getWinningMoney() * entry.getValue())
+                .sum();
     }
 
     public RankCount getRankCount() {

@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 
 public class LottoCreatorTest {
     @Test
@@ -20,13 +21,13 @@ public class LottoCreatorTest {
     }
 
     @Test
-    void 잘못된_로또_번호_주입() throws Exception {
+    void 잘못된_로또_번호_주입_시_예외_발생() throws Exception {
         // given
         List<Integer> lottoNum = Arrays.asList(1, 2, 3);
         // when
-        Lotto lotto = LottoCreator.createLotto(lottoNum);
         // then
-        assertThat(lotto).isNull();
+        assertThatExceptionOfType(IllegalArgumentException.class)
+                .isThrownBy(() -> LottoCreator.createLotto(lottoNum));
     }
 
 }
