@@ -8,7 +8,7 @@ import static lotto.model.Lotto.ZERO;
 
 public class CountOfManualLottoValidator {
     public static void test(int countOfLotto, String countOfManualLotto) throws Exception {
-        if (!countOfManualLotto.matches("\\d+")) {
+        if (!countOfManualLotto.matches("[-\\d]+")) {
             throw new IncorrectInputTypeException();
         }
 

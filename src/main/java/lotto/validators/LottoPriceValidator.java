@@ -9,7 +9,7 @@ import static lotto.model.Lotto.ZERO;
 
 public class LottoPriceValidator {
     public static void test(String totalPrice) throws Exception {
-        if (!totalPrice.matches("\\d+")) {
+        if (!totalPrice.matches("[-\\d]+")) {
             throw new IncorrectInputTypeException();
         }
         if (Integer.parseInt(totalPrice) < ZERO) {

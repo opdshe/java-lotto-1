@@ -1,5 +1,7 @@
 package lotto.model;
 
+import lotto.exceptions.IncorrectLottoLengthException;
+import lotto.exceptions.IncorrectLottoRangeException;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
@@ -21,13 +23,15 @@ public class LottoCreatorTest {
     }
 
     @Test
-    void 잘못된_로또_번호_주입_시_예외_발생() throws Exception {
-        // given
-        List<Integer> lottoNum = Arrays.asList(1, 2, 3);
-        // when
-        // then
-        assertThatExceptionOfType(IllegalArgumentException.class)
-                .isThrownBy(() -> LottoCreator.createLotto(lottoNum));
+    void 잘못된_길이의_로또번호_주입_시_예외_발생() throws Exception {
+        assertThatExceptionOfType(IncorrectLottoLengthException.class)
+                .isThrownBy(() -> LottoCreator.createLotto(Arrays.asList(1, 2, 3)));
+    }
+
+    @Test
+    void 잘못된_범위의_로또_번호_주입_시_예외_발생() throws Exception {
+        assertThatExceptionOfType(IncorrectLottoRangeException.class)
+                .isThrownBy(() -> LottoCreator.createLotto(Arrays.asList(0, 46, 47, 48, 49, 50)));
     }
 
 }

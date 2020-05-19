@@ -34,7 +34,7 @@ public class InputView {
         String numOfManualLotto = scanner.nextLine();
         try {
             CountOfManualLottoValidator.test(numOfTotalLotto, numOfManualLotto);
-        } catch (IllegalArgumentException e){
+        } catch (IllegalArgumentException e) {
             OutputView.printMessage(e.getMessage());
             return getNumOfManualLotto(numOfTotalLotto);
         }
@@ -58,7 +58,7 @@ public class InputView {
         return lastWeekLottoNum;
     }
 
-    public static int getLastWeekBonus(List<Integer> lastWeekAnswers) {
+    public static int getLastWeekBonus(List<Integer> lastWeekAnswers) throws Exception {
         int bonus;
         printMessage("보너스 볼을 입력해 주세요. ");
         try {
